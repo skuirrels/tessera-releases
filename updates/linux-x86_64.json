@@ -1,0 +1,23 @@
+{
+  "version": "0.1.26",
+  "notes": "Tessera 0.1.26",
+  "pub_date": "2026-10-20T13:31:26Z",
+  "platforms": {
+    "linux-x86_64-rpm": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURFY4MS8yNjM4ZWZxOEFYcktxdEtUdDBmT2h2RTJmN1pCaEdqaHpVeEF1Snl1eWduTk16L3NQd0MzR3FiY3c3azBFUGR3cnovRXpUZFdLOVViQU1GZFVXcWlmeDNuVmdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNTAzMDM4CWZpbGU6VGVzc2VyYS0wLjEuMjYtMS54ODZfNjQucnBtCXZlcnNpb246MC4xLjI2CmlWY214ZWFiTlJPRlN4Z1JINzUzVzl4emJUMnE5Mlh0SVNaNHFVNVlManpqaUxsUkdObjdJNTkra3pFVzRVUkhrT1VQcU9Hay8zek85MHhLNTRJYUNRPT0K",
+      "url": "https://skuirrels.github.io/tessera-releases/Tessera-Linux-x86_64.rpm"
+    },
+    "linux-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURFY4MS8yNjM4ZWVQNGpoWjA3bkxXMktmcmZHNTJsaUZjZ09MUDVvZTVJOEE5ak94bW9RRUVrLzh6NEM2QU9pTW5zRUZOeHc4K3VRR2tFWTNmZnlXTGNpeHR0NkRaV0FjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNTAzMDM4CWZpbGU6VGVzc2VyYV8wLjEuMjZfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjowLjEuMjYKcVVYMXMvMldXclVMZzNLcHB6d25GemRUNmNrWklUbDNtcVd1WnVBejFWTmJ1N0p6YVZGTmZ2TUFYUjV5eXlLU1A2UXhzeGdTaFdlUjhwQzhIQjFaQVE9PQo=",
+      "url": "https://skuirrels.github.io/tessera-releases/Tessera-Linux-x86_64.AppImage"
+    },
+    "linux-x86_64-appimage": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURFY4MS8yNjM4ZWVQNGpoWjA3bkxXMktmcmZHNTJsaUZjZ09MUDVvZTVJOEE5ak94bW9RRUVrLzh6NEM2QU9pTW5zRUZOeHc4K3VRR2tFWTNmZnlXTGNpeHR0NkRaV0FjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNTAzMDM4CWZpbGU6VGVzc2VyYV8wLjEuMjZfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjowLjEuMjYKcVVYMXMvMldXclVMZzNLcHB6d25GemRUNmNrWklUbDNtcVd1WnVBejFWTmJ1N0p6YVZGTmZ2TUFYUjV5eXlLU1A2UXhzeGdTaFdlUjhwQzhIQjFaQVE9PQo=",
+      "url": "https://skuirrels.github.io/tessera-releases/Tessera-Linux-x86_64.AppImage"
+    },
+    "linux-x86_64-deb": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURFY4MS8yNjM4ZWZ2TnNvUlZDbFA3RE51WjlSVmJZMDlXSjdUb25mb0xlL0lCWHl5RDE2aHkxZHJlR1lUYUpHUjJRdE9CWnB0citqNXhHVy8vbEtaR3ZablN0TUtUaUFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNTAzMDM4CWZpbGU6VGVzc2VyYV8wLjEuMjZfYW1kNjQuZGViCXZlcnNpb246MC4xLjI2CmZRS0FiU2E3V0N2dWVxREVOdjZPQllGb3NZcCs2K2lEc2pPbDV1U05FR2daNEJGTWwrQm4reEJ5V3pGREprbi9WUWwxa2dkcGVnakR4SzBtN2lMSUJ3PT0K",
+      "url": "https://skuirrels.github.io/tessera-releases/Tessera-Linux-amd64.deb"
+    }
+  }
+}

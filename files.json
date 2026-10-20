@@ -1,0 +1,38 @@
+{
+  "Tessera-Linux-amd64.deb": {
+    "version": "0.1.26",
+    "platform": "linux"
+  },
+  "Tessera-Linux-x86_64.AppImage": {
+    "version": "0.1.26",
+    "platform": "linux"
+  },
+  "Tessera-Linux-x86_64.rpm": {
+    "version": "0.1.26",
+    "platform": "linux"
+  },
+  "Tessera-Windows-Setup.exe": {
+    "version": "0.1.26",
+    "platform": "windows"
+  },
+  "Tessera-Windows.msi": {
+    "version": "0.1.26",
+    "platform": "windows"
+  },
+  "Tessera-macOS-AppleSilicon.app.tar.gz": {
+    "version": "0.1.26",
+    "platform": "macos"
+  },
+  "Tessera-macOS-AppleSilicon.dmg": {
+    "version": "0.1.26",
+    "platform": "macos"
+  },
+  "Tessera-macOS-Intel.app.tar.gz": {
+    "version": "0.1.26",
+    "platform": "macos"
+  },
+  "Tessera-macOS-Intel.dmg": {
+    "version": "0.1.26",
+    "platform": "macos"
+  }
+}

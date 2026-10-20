@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tessera · Download</title>
+<meta name="description" content="Tessera 0.1.26: A cross-platform XML and JSON editor. Installers for Windows, macOS and Linux.">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<style>
+  :root {
+    --bg: #f5f7fb; --panel: #ffffff; --text: #18202f; --muted: #5d6779; --border: #dde3ec;
+    --accent: #1d4ed8; --accent-2: color-mix(in srgb, #1d4ed8 10%, #fff); --glow: color-mix(in srgb, #1d4ed8 18%, transparent);
+    --shadow: 0 10px 30px rgba(20, 40, 80, .08);
+    --amber: #f59e0b; --teal: #14b8a6; --pink: #ec4899; --blue: #3b82f6;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0c111a; --panel: #141b27; --text: #e6eaf1; --muted: #98a3b6; --border: #253043;
+      --accent: #6b9bff; --accent-2: color-mix(in srgb, #6b9bff 14%, #141b27); --glow: color-mix(in srgb, #6b9bff 22%, transparent);
+      --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+      --amber: #fbbf24; --teal: #2dd4bf; --pink: #f472b6; --blue: #60a5fa;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+  a { color: var(--accent); }
+  code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+  .hero { position: relative; overflow: hidden; padding: 72px 0 48px; text-align: center;
+          background: radial-gradient(800px 320px at 50% -60px, var(--glow), transparent 70%); }
+  .hero::before { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .5;
+          background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px);
+          background-size: 44px 44px; mask-image: radial-gradient(600px 260px at 50% 0, #000, transparent 75%);
+          -webkit-mask-image: radial-gradient(600px 260px at 50% 0, #000, transparent 75%); }
+  .hero .wrap { position: relative; }
+  .hero img { width: 104px; height: 104px; filter: drop-shadow(0 10px 24px var(--glow)); animation: float 6s ease-in-out infinite; }
+  @keyframes float { 50% { transform: translateY(-6px); } }
+  @media (prefers-reduced-motion: reduce) { .hero img { animation: none; } }
+  h1 { font-size: clamp(2.4rem, 6vw, 3.4rem); margin: 14px 0 6px; letter-spacing: -.03em; }
+  .tagline { font-size: 1.2rem; color: var(--muted); max-width: 640px; margin: 0 auto 28px; }
+  .cta { display: inline-flex; flex-direction: column; align-items: center; gap: 2px; padding: 14px 34px; border-radius: 12px;
+         background: #1d4ed8; color: #fff; text-decoration: none; font-weight: 600; font-size: 1.1rem;
+         box-shadow: 0 8px 24px var(--glow); transition: transform .15s, filter .15s; }
+  .cta small { font-weight: 400; opacity: .85; font-size: .82rem; }
+  .cta:hover { transform: translateY(-1px); filter: brightness(1.08); }
+  .version { margin-top: 16px; color: var(--muted); font-size: .9rem; }
+  .other { margin-top: 6px; font-size: .9rem; }
+  section { padding: 34px 0; }
+  h2 { font-size: 1.5rem; margin: 0 0 18px; letter-spacing: -.01em; }
+  .grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); align-items: start; }
+  .card { position: relative; background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 18px; box-shadow: var(--shadow); }
+  .card.mine { border-color: var(--accent); box-shadow: 0 0 0 3px var(--glow), var(--shadow); }
+  .card header { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+  .card header svg { width: 34px; height: 34px; fill: var(--text); flex: none; }
+  .card h3 { margin: 0; font-size: 1.2rem; }
+  .card header p { margin: 0; color: var(--muted); font-size: .85rem; }
+  .badge { display: none; position: absolute; top: -11px; right: 14px; font-size: .72rem; font-weight: 600; color: #fff;
+           background: var(--accent); border-radius: 20px; padding: 3px 10px; white-space: nowrap; }
+  .card.mine .badge { display: inline-block; }
+  .files { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .dl { position: relative; display: flex; flex-direction: column; padding: 11px 44px 11px 14px; border: 1px solid var(--border); border-radius: 10px;
+        text-decoration: none; color: var(--text); background: var(--bg); transition: border-color .15s, transform .15s; }
+  .dl:hover { border-color: var(--accent); transform: translateY(-1px); }
+  .dl.primary { border-color: var(--accent); background: var(--accent-2); }
+  .dl .name { font-weight: 600; }
+  .dl .meta { font-size: .82rem; color: var(--muted); }
+  .dl .arrow { position: absolute; right: 14px; top: 50%; width: 18px; height: 18px; margin-top: -9px; fill: none;
+               stroke: var(--muted); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .dl:hover .arrow { stroke: var(--accent); }
+  details { margin: 4px 2px 0; font-size: .75rem; color: var(--muted); }
+  summary { cursor: pointer; }
+  details code { display: block; word-break: break-all; font-size: .72rem; }
+  .features { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  .feature { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 16px; border-top: 3px solid var(--tone); }
+  .feature.amber { --tone: var(--amber); } .feature.teal { --tone: var(--teal); }
+  .feature.pink { --tone: var(--pink); } .feature.blue { --tone: var(--blue); }
+  .feature b { display: block; margin-bottom: 4px; }
+  .feature span { color: var(--muted); font-size: .92rem; }
+  .extras { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); list-style: none; margin: 0; padding: 0; }
+  .help { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); }
+  .help div, .notes { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; font-size: .92rem; min-width: 0; }
+  .notes { padding: 6px 20px; font-size: 1rem; }
+  .notes h4 { margin: 16px 0 6px; }
+  .notes h4 .date { font-weight: 400; color: var(--muted); font-size: .85rem; margin-left: 6px; }
+  .notes ul { margin: 0 0 8px; padding-left: 20px; }
+  .notes li { margin: 3px 0; }
+  .help h3 { margin: 0 0 6px; font-size: 1rem; }
+  pre { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; overflow-x: auto; font-size: .8rem; }
+  .update { display: flex; gap: 14px; align-items: center; background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 14px 18px; }
+  .update svg { width: 28px; height: 28px; flex: none; fill: none; stroke: var(--teal); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  footer { padding: 34px 0 50px; color: var(--muted); font-size: .85rem; text-align: center; }
+  @media (max-width: 520px) { .hero { padding-top: 44px; } .wrap { padding: 0 16px; } }
+</style>
+</head>
+<body>
+  <div class="hero">
+    <div class="wrap">
+      <img src="icon.svg" alt="">
+      <h1>Tessera</h1>
+      <p class="tagline">A fast, cross-platform XML and JSON editor. Validate against schemas, query with XPath&nbsp;3.1 and JSONPath, run XSLT, and format without losing a byte.</p>
+      <a class="cta" id="cta" href="#downloads">Download Tessera <small id="cta-sub">Windows · macOS · Linux</small></a>
+      <div class="version">Version 0.1.26 · 20 October 2026 · free download</div>
+      <div class="other"><a href="#downloads">All downloads</a> · <a href="SHA256SUMS.txt">Checksums</a> · <a href="#changelog">Change log</a></div>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <section id="downloads">
+      <h2>Downloads</h2>
+      <div class="grid">
+      <article class="card" id="windows">
+        <span class="badge">Recommended for you</span>
+        <header>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5 10.5 4.4v7.1H3zm0 13 7.5 1.1v-7H3zM11.6 4.3 21 3v8.5h-9.4zm0 15.4L21 21v-8.4h-9.4z"/></svg>
+          <div><h3>Windows</h3><p>Windows 10 and 11, 64-bit</p></div>
+        </header>
+        <ul class="files">
+          <li>
+            <a class="dl primary" href="Tessera-Windows-Setup.exe" download data-arch="">
+              <span class="name">Windows installer</span>
+              <span class="meta">64-bit · .exe · 17.0 MB</span>
+              <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12m0 0-5-5m5 5 5-5M5 20h14"/></svg>
+            </a>
+            <details><summary>SHA-256</summary><code>43dbd2a355e081165512107a65bbf7cc3f09cd464854b7ae396507dd00b93191</code></details>
+          </li>
+          <li>
+            <a class="dl" href="Tessera-Windows.msi" download data-arch="">
+              <span class="name">Windows MSI package</span>
+              <span class="meta">64-bit · .msi · for managed deployment · 23.5 MB</span>
+              <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12m0 0-5-5m5 5 5-5M5 20h14"/></svg>
+            </a>
+            <details><summary>SHA-256</summary><code>8b8e11e8af981be2582834b53675695ca9f3017d476b20f797da422ce25a7586</code></details>
+          </li>
+        </ul>
+      </article>
+      <article class="card" id="macos">
+        <span class="badge">Recommended for you</span>
+        <header>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.5 2-3.6 2.1-3.7-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9s-2-.9-3.3-.9C6.1 7 4.5 8 3.6 9.6c-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6s1.8-.8 3.3-.8 2 .8 3.3.8 2.2-1.3 3-2.5c1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.4zM13.9 5.1c.7-.8 1.2-2 1-3.1-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.6 2.9-1.4z"/></svg>
+          <div><h3>macOS</h3><p>macOS 10.15 or newer</p></div>
+        </header>
+        <ul class="files">
+          <li>
+            <a class="dl primary" href="Tessera-macOS-AppleSilicon.dmg" download data-arch="arm">
+              <span class="name">Apple Silicon</span>
+              <span class="meta">M1 and later · .dmg · 22.2 MB</span>
+              <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12m0 0-5-5m5 5 5-5M5 20h14"/></svg>
+            </a>
+            <details><summary>SHA-256</summary><code>f9878b825e4098b2df4c0941b2a7dd774f8a34cc8ce76cdcb8f51f377386eb3e</code></details>
+          </li>
+          <li>
+            <a class="dl" href="Tessera-macOS-Intel.dmg" download data-arch="x86">
+              <span class="name">Intel</span>
+              <span class="meta">Older Macs · .dmg · 23.8 MB</span>
+              <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12m0 0-5-5m5 5 5-5M5 20h14"/></svg>
+            </a>
+            <details><summary>SHA-256</summary><code>94294badba8a2a18bcda8c7b3d900e06b0f255b569825e70044eb4a2f34cac72</code></details>
+          </li>
+        </ul>
+      </article>
+      <article class="card" id="linux">
+        <span class="badge">Recommended for you</span>
+        <header>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c-2.2 0-3.6 1.8-3.6 4.4 0 1.5.3 2.4-.6 3.7C6.6 11.8 5 13.9 5 16.4c0 .7.1 1.3.4 1.8-.8.4-1.9.6-1.9 1.6 0 1.3 1.9 1.1 3.3 1.7 1.2.5 2.2.5 2.8-.3.8.2 1.6.3 2.4.3s1.6-.1 2.4-.3c.6.8 1.6.8 2.8.3 1.4-.6 3.3-.4 3.3-1.7 0-1-1.1-1.2-1.9-1.6.3-.5.4-1.1.4-1.8 0-2.5-1.6-4.6-2.8-6.3-.9-1.3-.6-2.2-.6-3.7C15.6 3.8 14.2 2 12 2zm-1.6 4.3c.5 0 .8.6.8 1.2 0 .3-.1.6-.2.8l-.4-.1c.1-.2.1-.4.1-.6 0-.4-.2-.7-.4-.7s-.4.3-.4.7v.2l-.4-.2v-.1c0-.7.4-1.2.9-1.2zm3.1 0c.6 0 1 .5 1 1.2 0 .2 0 .3-.1.5l-.3.1v-.4c0-.5-.3-.8-.6-.8s-.5.4-.5.8c0 .2 0 .4.1.5l-.5.2c-.1-.2-.2-.5-.2-.8 0-.7.5-1.3 1.1-1.3zM12 9.1c.9 0 2.3.6 2.3 1s-1.3 1.2-2.3 1.2-2.3-.8-2.3-1.2 1.4-1 2.3-1zm-3.1 3.5c.5 1.6 1.6 3 3.1 3s2.6-1.4 3.1-3c.8 1 1.6 2.5 1.6 3.9 0 2.4-2.1 3.4-4.7 3.4s-4.7-1-4.7-3.4c0-1.4.8-2.9 1.6-3.9z"/></svg>
+          <div><h3>Linux</h3><p>x86-64 · Ubuntu 22.04 or newer, Debian, Fedora, …</p></div>
+        </header>
+        <ul class="files">
+          <li>
+            <a class="dl primary" href="Tessera-Linux-x86_64.AppImage" download data-arch="">
+              <span class="name">AppImage</span>
+              <span class="meta">Any distribution · no install · 97.5 MB</span>
+              <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12m0 0-5-5m5 5 5-5M5 20h14"/></svg>
+            </a>
+            <details><summary>SHA-256</summary><code>39bb4ee3effaa35d859726da4df77fff5576da32757eb1ad425643a16a53d843</code></details>
+          </li>
+          <li>
+            <a class="dl" href="Tessera-Linux-amd64.deb" download data-arch="">
+              <span class="name">Debian / Ubuntu</span>
+              <span class="meta">.deb package · 25.1 MB</span>
+              <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12m0 0-5-5m5 5 5-5M5 20h14"/></svg>
+            </a>
+            <details><summary>SHA-256</summary><code>b3715d87fc54ece834e200fdd6f9e6be68df3f5e157bbf3144dc336f655244b4</code></details>
+          </li>
+          <li>
+            <a class="dl" href="Tessera-Linux-x86_64.rpm" download data-arch="">
+              <span class="name">Fedora / RHEL / openSUSE</span>
+              <span class="meta">.rpm package · 25.1 MB</span>
+              <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12m0 0-5-5m5 5 5-5M5 20h14"/></svg>
+            </a>
+            <details><summary>SHA-256</summary><code>799213ae0d03a540b8087183f2c76a032261c9fe9fc8c2fb882dec9fa83bac8a</code></details>
+          </li>
+        </ul>
+      </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="update">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 0 1-15.5 6.2M3 12a9 9 0 0 1 15.5-6.2M18.5 2v3.8h-3.8M5.5 22v-3.8h3.8"/></svg>
+        <div><b>Installed copies update themselves.</b> Tessera checks for a newer version when it starts, and Help ▸ Check for Updates checks on demand.</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>What you get</h2>
+      <div class="features">
+        <div class="feature amber"><b>Schema validation</b><span>XML Schema, DTD and RELAX NG checks as you type, with completion and hover docs from the grammar.</span></div>
+        <div class="feature teal"><b>XPath 3.1 and JSONPath</b><span>Live results as you type, every match highlighted in the file, click to jump.</span></div>
+        <div class="feature pink"><b>XSL transformations</b><span>Run XSLT 1.0 with 2.0 grouping and functions in a sandboxed worker, output in a new tab.</span></div>
+        <div class="feature blue"><b>Lossless formatting</b><span>Pretty-print changes only insignificant whitespace. Encoding, BOM and line endings survive a save.</span></div>
+        <div class="feature amber"><b>Generate schemas</b><span>Infer an XML Schema or a JSON Schema 2020-12 from a sample document.</span></div>
+        <div class="feature teal"><b>Copy paths</b><span>Copy the XPath, JSONPath or JSON Pointer of anything under the cursor, with positions or filters.</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Install notes</h2>
+      <div class="help">
+        <div><h3>Windows</h3>Run the installer. If SmartScreen says “Windows protected your PC”, choose <b>More info → Run anyway</b> (the build is not code-signed yet). The .msi suits managed installs.</div>
+        <div><h3>macOS</h3>Open the .dmg and drag Tessera to Applications. The first time, <b>right-click the app → Open</b> (the build is not notarized yet).</div>
+        <div><h3>Linux</h3>Make the AppImage executable and run it, or install the package for your distribution.
+          <pre>chmod +x Tessera-Linux-x86_64.AppImage &amp;&amp; ./Tessera-Linux-x86_64.AppImage
+sudo apt install ./Tessera-Linux-amd64.deb
+sudo dnf install ./Tessera-Linux-x86_64.rpm</pre></div>
+      </div>
+    </section>
+
+    <section id="changelog">
+      <h2>Change log</h2>
+      <div class="notes"><h4>0.1.26 <span class="date">20 October 2026</span></h4>
+<ul>
+<li>The window has the system&#39;s own title bar again, with the usual minimise, maximise and close buttons. The menus are in a row below it, as in Mapster.</li>
+</ul>
+<h4>0.1.25 <span class="date">19 October 2026</span></h4>
+<ul>
+<li><strong>Save As</strong> keeps a JSON document&#39;s .json extension. The dialog starts on the document&#39;s own file type, so on Windows a name without an extension no longer became .xml or .xsd.</li>
+<li>An XSLT result written as text that is valid JSON opens as a JSON document, named .json.</li>
+<li>The Messages panel is now <strong>Logs</strong>, and the XPath tab says <strong>JSONPath</strong> for JSON and YAML documents.</li>
+</ul>
+<h4>0.1.24 <span class="date">19 October 2026</span></h4>
+<ul>
+<li>Clicking in the text after using the scrollbar, a tab or the outline puts the cursor where you click. On macOS it could jump back to the previous cursor and select everything in between.</li>
+<li><strong>Go to Line</strong> is Ctrl+G (⌃G on macOS). ⌘⌥G clashed with shortcuts of other apps, such as Google Drive.</li>
+<li><strong>Find Next</strong> and <strong>Find Previous</strong> are F3 and Shift+F3 on Windows and Linux (⌘G and ⌘⇧G on macOS), and in the Edit menu.</li>
+</ul>
+<h4>0.1.23 <span class="date">19 October 2026</span></h4>
+<ul>
+<li>Right-click a tab to copy the file name, or the file name with its path.</li>
+</ul>
+<h4>0.1.22 <span class="date">19 October 2026</span></h4>
+<ul>
+<li>With long file names, the close button on a tab keeps its full size. Only the name is shortened.</li>
+</ul>
+<h4>0.1.21 <span class="date">19 October 2026</span></h4>
+<ul>
+<li>The XPath tab is shown only for XML, JSON and YAML documents. Markdown and text documents show Messages instead, and Evaluate XPath/JSONPath is turned off for them.</li>
+<li>In the dark theme, selected text in the XPath box is readable, with the same selection colour as the editor.</li>
+</ul>
+<h4>0.1.20 <span class="date">19 October 2026</span></h4>
+<ul>
+<li>The Markdown, Markdown and Preview, and Preview switch is in the toolbar, so it stays in place when you change the view. Windows and Linux already had this in 0.1.19.</li>
+</ul>
+<h4>0.1.19 <span class="date">19 October 2026</span></h4>
+<ul>
+<li><strong>Tessera Settings</strong> (File ▸ Settings…, Ctrl+, or ⌘,): the editor and checking options as tick boxes, in one place.</li>
+<li><strong>Open with Tessera</strong>: tick the extensions (.xml, .xsd, .json, .yml, .md and the rest) and make Tessera their default app. macOS asks you to confirm each kind of file; on Windows, Tessera opens Settings ▸ Default apps for you to choose it.</li>
+<li>On macOS, Tessera now appears in Open With for .xsd, .xsl, .xslt, .wsdl, .rng, .sch, .jsonc, .json5 and .jsonl files.</li>
+</ul>
+<h4>0.1.18 <span class="date">18 October 2026</span></h4>
+<ul>
+<li><strong>Markdown views</strong>: show the source, the preview, or both side by side, from the switch at the right of the tabs, the View menu, or Ctrl+Shift+V. The outline stays in every view, and clicking a heading scrolls the preview.</li>
+<li><strong>Find</strong> opens as a compact box at the top right of the editor, as in other editors. It shows the number of matches, selects the nearest one as you type, and has match case, whole word and regular expression toggles (Alt+C, Alt+W, Alt+R). <strong>Replace</strong> is Ctrl+H.</li>
+</ul>
+<h4>0.1.17 <span class="date">18 October 2026</span></h4>
+<ul>
+<li>The app name in the title bar is centred on the window and drawn in the normal text colour.</li>
+</ul>
+<h4>0.1.16 <span class="date">18 October 2026</span></h4>
+<ul>
+<li>The title bar shows the app name; the tabs already show the file.</li>
+<li>New download page: a download button that picks your system (and Mac architecture where the browser says), a card per platform with sizes and SHA-256 checksums, and installers under names that never change.</li>
+</ul>
+<h4>0.1.15 <span class="date">17 October 2026</span></h4>
+<ul>
+<li><strong>JSON Schema</strong> for JSON and YAML: live validation located in the text, completion and hover from the schema, Assign/Go to JSON Schema, and checks of schemas against their meta-schema.</li>
+<li><strong>YAML 1.2</strong> as a full format: outline, breadcrumb, JSONPath, aliases and merge keys, multi-document streams, and JSON ↔ YAML conversion.</li>
+<li><strong>Generate sample</strong> XML from an XSD, and sample JSON/YAML from a JSON Schema, with XMLSpy&#39;s options.</li>
+<li><strong>Conversion dialogs</strong> for XML ↔ JSON/YAML: prefixes, arrays, type detection, comments and processing instructions.</li>
+<li><strong>Markdown</strong>: highlighting, heading outline and a live preview that follows the editor.</li>
+<li><strong>AI assist</strong> through your own Claude Code or Codex CLI: chat panel, Explain, Fix with AI, XSLT from examples (checked by running it) and realistic sample values. Off by default; every request shows what will be sent.</li>
+<li>F7/F8 validate from the editor instead of jumping to the diagnostics.</li>
+</ul>
+<h4>0.1.14 <span class="date">17 October 2026</span></h4>
+<ul>
+<li>macOS: the window buttons are centred on the title bar, and the menus have more room.</li>
+</ul>
+<h4>0.1.13 <span class="date">17 October 2026</span></h4>
+<ul>
+<li>Each platform has its own update feed, so a Mac no longer reports “None of the fallback platforms were found” when another platform was released first. No update for your platform now reads as up to date.</li>
+</ul>
+<h4>0.1.12 <span class="date">17 October 2026</span></h4>
+<ul>
+<li>Right-click ▸ Evaluate XPath/JSONPath in the editor, outline or breadcrumb starts from the clicked element.</li>
+</ul>
+<h4>0.1.11 <span class="date">17 October 2026</span></h4>
+<ul>
+<li>Very deeply nested XML and entity “bombs” no longer crash the app or exhaust memory.</li>
+<li>Much faster XML → JSON, schema generation and XPath results on large or deep documents; JSON tools use far less memory.</li>
+<li>XPath works on documents with a DOCTYPE, and copied XPaths select their node when prefixes are rebound or default namespaces nest.</li>
+<li>Fixes in JSON → XML, schema generation and schema/DTD assignment.</li>
+<li>Validation (F8) no longer times out the first time after start; the language server and XSLT worker exit with Tessera.</li>
+<li>Saves of a document are serialised, pretty-print on open can&#39;t open a file twice, and updates download before asking about unsaved work.</li>
+<li>Shortcuts follow the keyboard layout, ignore AltGr characters and don&#39;t auto-repeat Save.</li>
+</ul>
+<h4>0.1.10 and earlier <span class="date">16–17 October 2026</span></h4>
+<ul>
+<li><strong>Editor</strong> for XML and JSON with lossless pretty-print: encoding, BOM and line endings survive a save. Saves detect files changed by other programs.</li>
+<li><strong>XML tools</strong>: live well-formedness checks, outline, breadcrumb, Copy XPath (plain, with positions, or with attribute values) and XML ↔ JSON conversion.</li>
+<li><strong>XPath 3.1 window</strong> like XMLSpy&#39;s: live results beside the expression, matches highlighted in the editor, default-namespace names, syntax colouring and history.</li>
+<li><strong>Schema validation</strong> with XML Schema, DTD and RELAX NG via LemMinX: diagnostics as you type, completion, hover docs and Go to Schema/DTD.</li>
+<li><strong>XSL Transformation</strong> (F10) in an isolated worker with a timeout and Stop; output opens in a new tab.</li>
+<li><strong>Generate Schema</strong>: an XSD or a JSON Schema 2020-12 from a sample document.</li>
+<li><strong>JSON paths</strong>: JSON outline and breadcrumb, Copy JSONPath and JSON Pointer, and JSONPath (RFC 9535) in the XPath window.</li>
+<li>Toolbar, right-click menus, File ▸ Recent Files, and Pretty-Print on Open.</li>
+<li>Islands layout with Tessera&#39;s own title bar and resizable, remembered panels.</li>
+<li>Opens files from the OS: file associations for XML and JSON, and a second launch hands its files to the running window.</li>
+<li>Automatic updates: checked at start and with Help ▸ Check for Updates.</li>
+</ul></div>
+    </section>
+  </main>
+
+  <footer>Tessera 0.1.26 · built from 7d01b38 · MIT License</footer>
+
+<script>
+  // Highlight the visitor's system and point the main button at its recommended installer.
+  (function () {
+    var ua = navigator.userAgent || "";
+    var platform = (navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || "";
+    var os = /Win/i.test(platform + ua) ? "windows" : /Mac|iPhone|iPad/i.test(platform + ua) ? "macos" : /Linux|X11|CrOS/i.test(platform + ua) ? "linux" : null;
+    var card = os && document.getElementById(os);
+    if (!card) return;
+    card.classList.add("mine");
+    var pick = card.querySelector(".dl.primary") || card.querySelector(".dl");
+    var finish = function (link) {
+      var cta = document.getElementById("cta");
+      cta.href = link.getAttribute("href");
+      cta.setAttribute("download", "");
+      cta.firstChild.textContent = "Download for " + card.querySelector("h3").textContent + " ";
+      var meta = link.querySelector(".meta").textContent.split(" · ");
+      document.getElementById("cta-sub").textContent = link.querySelector(".name").textContent + " · " + meta[meta.length - 1];
+    };
+    // Apple Silicon vs Intel: ask the browser when it can tell, otherwise assume Apple Silicon.
+    if (os === "macos" && navigator.userAgentData && navigator.userAgentData.getHighEntropyValues) {
+      navigator.userAgentData.getHighEntropyValues(["architecture"]).then(function (v) {
+        finish(card.querySelector('.dl[data-arch="' + (v.architecture === "x86" ? "x86" : "arm") + '"]') || pick);
+      }).catch(function () { finish(pick); });
+    } else {
+      finish(pick);
+    }
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "version": "0.1.26",
+  "notes": "Tessera 0.1.26",
+  "pub_date": "2026-10-20T13:22:05Z",
+  "platforms": {
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURFY4MS8yNjM4ZWQ1eWtxTGFnU2xMdFQ1djFaNWp6V3BRbnc3QktSMEpjRk5qb2dQUVBmWlZqbVluVE03ZUMyMFM2aUhVdGYrRVlpcWczSUl1QUxYYzFudVV5RmEyQWc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNTAyMzY5CWZpbGU6VGVzc2VyYS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjI2Ck91cDRKUktQU2dqZFo1WE83a3dSZ0I0ZE9tUWZ5OGtYMk9LNWZVZDFkeXpNKzRic0diMXhHdkhYa3hpWTh1RWNiZlRxOG1pZTZJUDhnRnVWb2N5dENBPT0K",
+      "url": "https://skuirrels.github.io/tessera-releases/Tessera-macOS-AppleSilicon.app.tar.gz"
+    },
+    "darwin-aarch64-app": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURFY4MS8yNjM4ZWQ1eWtxTGFnU2xMdFQ1djFaNWp6V3BRbnc3QktSMEpjRk5qb2dQUVBmWlZqbVluVE03ZUMyMFM2aUhVdGYrRVlpcWczSUl1QUxYYzFudVV5RmEyQWc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNTAyMzY5CWZpbGU6VGVzc2VyYS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjI2Ck91cDRKUktQU2dqZFo1WE83a3dSZ0I0ZE9tUWZ5OGtYMk9LNWZVZDFkeXpNKzRic0diMXhHdkhYa3hpWTh1RWNiZlRxOG1pZTZJUDhnRnVWb2N5dENBPT0K",
+      "url": "https://skuirrels.github.io/tessera-releases/Tessera-macOS-AppleSilicon.app.tar.gz"
+    }
+  }
+}

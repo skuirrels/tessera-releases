@@ -1,0 +1,19 @@
+{
+  "version": "0.1.26",
+  "notes": "Tessera 0.1.26",
+  "pub_date": "2026-10-20T13:31:26Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURFY4MS8yNjM4ZVI4Y3dETEZCeFI4ajJxY2JkUGVSS0M1NFB4NnpmYmoxTDBsYS9vOUtvVVBvSDNsQ2g4dUVrSm1JZUVVdE5TWXdSS293cGJER201cGR4SUU2Q05tUWdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNTAyNDY0CWZpbGU6VGVzc2VyYV8wLjEuMjZfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS4yNgpPZWpnNHF1d09pM2VrREMzMmk0OXhiNHhLZ1oxVDZIN3E4bVBRR3NLTUpmd2hGanN5MjNDMUQ4UnlHRTlGOGczU1Q2TTU3UWlnWXM4UmRuVU9nTzJDUT09Cg==",
+      "url": "https://skuirrels.github.io/tessera-releases/Tessera-Windows-Setup.exe"
+    },
+    "windows-x86_64-nsis": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURFY4MS8yNjM4ZVI4Y3dETEZCeFI4ajJxY2JkUGVSS0M1NFB4NnpmYmoxTDBsYS9vOUtvVVBvSDNsQ2g4dUVrSm1JZUVVdE5TWXdSS293cGJER201cGR4SUU2Q05tUWdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNTAyNDY0CWZpbGU6VGVzc2VyYV8wLjEuMjZfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS4yNgpPZWpnNHF1d09pM2VrREMzMmk0OXhiNHhLZ1oxVDZIN3E4bVBRR3NLTUpmd2hGanN5MjNDMUQ4UnlHRTlGOGczU1Q2TTU3UWlnWXM4UmRuVU9nTzJDUT09Cg==",
+      "url": "https://skuirrels.github.io/tessera-releases/Tessera-Windows-Setup.exe"
+    },
+    "windows-x86_64-msi": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURFY4MS8yNjM4ZVFDamtqaHV6YzZnUFVyMm54V3dvdjlQQXpYVHp4MlN0TDlNek43R1padVhFZ0huS09MVlY0cm9uOGtZcGhJSVR3SGRxdHY5SXprNkxrMHU0VUFTTWc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNTAyNDY0CWZpbGU6VGVzc2VyYV8wLjEuMjZfeDY0X2VuLVVTLm1zaQl2ZXJzaW9uOjAuMS4yNgpXY0liZjdVQmppcjVnWlB2RzZDUWpQWG9sYU84NDhuWlpkbHUxT1hMQkdzRVJlMWl3a2hyaGgrYm01SkhCNEhRdkJ3QkNtTWFGYTI2UVh4RC9CTDdBUT09Cg==",
+      "url": "https://skuirrels.github.io/tessera-releases/Tessera-Windows.msi"
+    }
+  }
+}
