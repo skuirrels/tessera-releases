@@ -1,0 +1,51 @@
+{
+  "version": "0.1.29",
+  "notes": "Tessera 0.1.29",
+  "pub_date": "2026-11-07T13:46:20Z",
+  "platforms": {
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURFY4MS8yNjM4ZVRwcFVYbW5TandlUFZUZWI4dEs0MytzckRCalA4R3BLMjVIWFRtb0lNcExkTHdnTFRSc1hpbUt0SG52Slo1Yzh2bWRJMnR2Rkt5Ry92cmRYNGx4aGdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MDAwNTQxCWZpbGU6VGVzc2VyYS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjI5CnhlSUJ3UjdZeTAxTG5Id0JUNytnN09UVFQ2VnhXSVhMNlpoWTZPRlVQWm1ZejNiamZkSXF3cmdiMitZb3ZySWMveVRzVWh4bGV3SUYyMUQ4NjRGdUFRPT0K",
+      "url": "https://skuirrels.github.io/tessera-releases/Tessera-macOS-AppleSilicon.app.tar.gz"
+    },
+    "darwin-aarch64-app": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURFY4MS8yNjM4ZVRwcFVYbW5TandlUFZUZWI4dEs0MytzckRCalA4R3BLMjVIWFRtb0lNcExkTHdnTFRSc1hpbUt0SG52Slo1Yzh2bWRJMnR2Rkt5Ry92cmRYNGx4aGdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MDAwNTQxCWZpbGU6VGVzc2VyYS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjI5CnhlSUJ3UjdZeTAxTG5Id0JUNytnN09UVFQ2VnhXSVhMNlpoWTZPRlVQWm1ZejNiamZkSXF3cmdiMitZb3ZySWMveVRzVWh4bGV3SUYyMUQ4NjRGdUFRPT0K",
+      "url": "https://skuirrels.github.io/tessera-releases/Tessera-macOS-AppleSilicon.app.tar.gz"
+    },
+    "darwin-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURFY4MS8yNjM4ZVhSZS9jTS83M2ZGck9WT0d2K2J2K0lLL3BVUVJSalNTVFR5S2xlSlI3MVNlcUd4M3JuYWE2RUhUSWFQbklxZC9yR01IWmZ6VnNRdzFKTmxlem9rbXdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MDAwODI3CWZpbGU6VGVzc2VyYS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjI5Cmo3QjhoWGxyOFNhU0ErTWdYOTAwNTE5WGxpaElLVkRlVU5BZ1hrYzUvS05nMUVrWTFhdGtTMUczTE12a21mU2NPN1NvSVlOekVpaGhEVHcza0F2ZURnPT0K",
+      "url": "https://skuirrels.github.io/tessera-releases/Tessera-macOS-Intel.app.tar.gz"
+    },
+    "darwin-x86_64-app": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURFY4MS8yNjM4ZVhSZS9jTS83M2ZGck9WT0d2K2J2K0lLL3BVUVJSalNTVFR5S2xlSlI3MVNlcUd4M3JuYWE2RUhUSWFQbklxZC9yR01IWmZ6VnNRdzFKTmxlem9rbXdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MDAwODI3CWZpbGU6VGVzc2VyYS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjI5Cmo3QjhoWGxyOFNhU0ErTWdYOTAwNTE5WGxpaElLVkRlVU5BZ1hrYzUvS05nMUVrWTFhdGtTMUczTE12a21mU2NPN1NvSVlOekVpaGhEVHcza0F2ZURnPT0K",
+      "url": "https://skuirrels.github.io/tessera-releases/Tessera-macOS-Intel.app.tar.gz"
+    },
+    "linux-x86_64-rpm": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURFY4MS8yNjM4ZVlJMTFQRlJSYVVUNHFkbjJ4cE96dnhTY2k0Vmw0WTh3b3pMcFJIVEgxZG1SNm1tTndMUk5tTDg1UHdxN3dqczlNR29xcUxkRjlWRytXTXI5ZU9VRUFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MDU5MTQyCWZpbGU6VGVzc2VyYS0wLjEuMjktMS54ODZfNjQucnBtCXZlcnNpb246MC4xLjI5ClV3ZVdndGJOWG5OMUo2bHl4bXFhVW1QdEJBcnpLMzZneW1oNEpZazBsTmNuRmlKVldsUXZ0TWVVR09WTmV6RUMyaGxXZVFSNm45UWlWandQT1N5ZUFRPT0K",
+      "url": "https://skuirrels.github.io/tessera-releases/Tessera-Linux-x86_64.rpm"
+    },
+    "linux-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURFY4MS8yNjM4ZVdlc3NleC9DMmwrMnFMOWQ3NEN3ZmhBYzFlRTJ0UDd2RDFIYUZxa05saHZtODIwZnlRUlEwMjdBNEZyMmd1b3huZmRhYjhIWnVmVHBTY09tUnc3WGdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MDU5MTQyCWZpbGU6VGVzc2VyYV8wLjEuMjlfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjowLjEuMjkKL2dDOGdTaDlhbko1TUJtQUVuK0Z1S3BScE9xaGVBWks1OEpOQ1RNZUZ2cmFNQXp4MUcxYmpLTjM5VzAvUjllYTg1RHVIVmNCM2xVVk1sMVNsQlFFQ3c9PQo=",
+      "url": "https://skuirrels.github.io/tessera-releases/Tessera-Linux-x86_64.AppImage"
+    },
+    "linux-x86_64-appimage": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURFY4MS8yNjM4ZVdlc3NleC9DMmwrMnFMOWQ3NEN3ZmhBYzFlRTJ0UDd2RDFIYUZxa05saHZtODIwZnlRUlEwMjdBNEZyMmd1b3huZmRhYjhIWnVmVHBTY09tUnc3WGdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MDU5MTQyCWZpbGU6VGVzc2VyYV8wLjEuMjlfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjowLjEuMjkKL2dDOGdTaDlhbko1TUJtQUVuK0Z1S3BScE9xaGVBWks1OEpOQ1RNZUZ2cmFNQXp4MUcxYmpLTjM5VzAvUjllYTg1RHVIVmNCM2xVVk1sMVNsQlFFQ3c9PQo=",
+      "url": "https://skuirrels.github.io/tessera-releases/Tessera-Linux-x86_64.AppImage"
+    },
+    "linux-x86_64-deb": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURFY4MS8yNjM4ZVRPM1BhR2QwVGw1UjZhbjJ6dmxDUzlyRFY4dUFrMlZGalhVb055UVBXNVNvNzQ3NlhqdERiYW1IcGxKSnlLMkwwWWVobXIxR1BhRTUwak0wczh6RkFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MDU5MTQyCWZpbGU6VGVzc2VyYV8wLjEuMjlfYW1kNjQuZGViCXZlcnNpb246MC4xLjI5Cmg0RnlBVGthSGIyWVhWUnR2S2VndTV4ZnZ4TGs5R2F6NEgyalFKa3lvNTlVOGthcDdCTkFKRS9Na0xsOHlMTlFsd2I3TGczeGc4bGVLTlVCcVlFdkN3PT0K",
+      "url": "https://skuirrels.github.io/tessera-releases/Tessera-Linux-amd64.deb"
+    },
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURFY4MS8yNjM4ZVdtQ3VURjdNZkdmK3RSeFA5M2tVZVRkWDRja1QyV3dEaWdvL3NodWxXN0twa2pZRzlxYXpsS0tXK1QxSHY5TlBLWjZkbDZ5eHhScTJoK1BqY2ZSVmdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MDU4NjQ4CWZpbGU6VGVzc2VyYV8wLjEuMjlfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS4yOQpNaUJNMmgyTTRVTnp2WGdsVnhBVWcweTRPOGgxYUx3UzBuOUhoWWZyd0l3RUczcERjV0VTNm9DL0Q2Qi9sYmdWakxQWEtyaWc5S2RyUzhlOEdEZXNBdz09Cg==",
+      "url": "https://skuirrels.github.io/tessera-releases/Tessera-Windows-Setup.exe"
+    },
+    "windows-x86_64-nsis": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURFY4MS8yNjM4ZVdtQ3VURjdNZkdmK3RSeFA5M2tVZVRkWDRja1QyV3dEaWdvL3NodWxXN0twa2pZRzlxYXpsS0tXK1QxSHY5TlBLWjZkbDZ5eHhScTJoK1BqY2ZSVmdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MDU4NjQ4CWZpbGU6VGVzc2VyYV8wLjEuMjlfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS4yOQpNaUJNMmgyTTRVTnp2WGdsVnhBVWcweTRPOGgxYUx3UzBuOUhoWWZyd0l3RUczcERjV0VTNm9DL0Q2Qi9sYmdWakxQWEtyaWc5S2RyUzhlOEdEZXNBdz09Cg==",
+      "url": "https://skuirrels.github.io/tessera-releases/Tessera-Windows-Setup.exe"
+    },
+    "windows-x86_64-msi": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURFY4MS8yNjM4ZVhueVdNTkhRR2RFQ1FZSlkvdmNZdTkxT1RiQ0U1ZEZ2anNaaFpGdXBLc1U4NmdoUTFXblpGa3F3UG5kUGtDcktuNmxBeGorcWRhbDRvendQZzdRWUFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MDU4NjQ4CWZpbGU6VGVzc2VyYV8wLjEuMjlfeDY0X2VuLVVTLm1zaQl2ZXJzaW9uOjAuMS4yOQp5OU9ybFBQMDI0N0pxZ3VFWm9uM1BKWmVud0Vsdk81RGIyOE1oYjlZazVVL3dtZHNqa1Y3TUlERUhMZzNyRENsbmJIRlk5TlhCdHI3SzJ5VVlDQWFDUT09Cg==",
+      "url": "https://skuirrels.github.io/tessera-releases/Tessera-Windows.msi"
+    }
+  }
+}
